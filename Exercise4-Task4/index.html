@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel = "stylesheet" type="text/css" href="./style.css">
+    <script src = "script.js"></script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+
+                    <div>
+                        <label>Firstname</label>
+                        <input type="text" id="firstname">
+                    </div> <br/>
+                    <div>
+
+                        <label>Lastname</label>
+                        <input type="text" id="lastname">
+                    </div><br/>
+
+                    <div>
+                        <input type="submit" value = "Add" id="submitbtn" >
+                    </div> <br/>
+                 
+
+                </form>
+            </td>
+
+            <td>
+                <table id="employeeList">
+                    <thead>
+                        <tr>
+                            
+                            <th>Firstname</th>
+                            <th>Lastname</th>
+                            <th></th>
+                            <th>Check all:<input type="checkbox" name="chk_all"
+                                onChange="checkAll(this)"/>
+                            </th>
+                            <th><input type="submit" value="Delete" onClick="deleteAll()"></th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    
+</body>
+</html>
